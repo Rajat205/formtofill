@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+div.back{margin-top:30px;
+	width:300px;
+	height:430px;
+background-color:#FFEF82;
+}
+div.register{height:400px;
+	width: 250px;
+	margin-top:60px;
+
+}
+div.form{height:460px;
+	background-color:#E94822;
+}
+input#submit{width: 200px;
+	padding:7px;
+	font-size: 16px;
+	font family: sans-serif;
+	font-weight: 600;
+	border:none;
+	background-color:#2C2D34;
+	cursor:pointer;
+	color:#FFEF82;
+}
+input#reset{width: 200px;
+	padding:7px;
+	font-size: 16px;
+	font family: sans-serif;
+	font-weight: 600;
+	border:none;
+	background-color:#FFEF82;
+	cursor:pointer;
+	color:#2C2D34;
+}
+h1{
+	color:#E94822;
+	margin-top: 100px;
+}
+label{font-size:25px;
+	font-type:bold;
+	font-style:italic;
+	color:#2C2D34;}
+input{font-size:15px;
+	background-color:#FFEF82;}
+</style>
+
+<body bgcolor="#2C2D34">
+<center>
+<h1>REGISTERATION FORM</h1>
+<hr>
+<div class="back">
+<div class="register">
+<div class="form">
+<form action="index.php" method ="post">
+<label>FIRST NAME:</label><br>
+<input type=text placeholder="first name" name ="First_name" required>
+
+<br>
+<label>LAST NAME:</label><br>
+<input type=text placeholder="last name" name ="Last_name" required><br>
+
+<label>Phone no:</label><br>
+<input type="text" maxlength=10 placeholder="phone number"name=Phone  required ><br>
+
+<label>Email:   </label><br>
+<input type="email" name=Email placeholder="Email (*optional)"><br>
+
+<label>Branch:</label><br>
+<input type="text" name=Branch placeholder="Branch" ><br>
+
+<lable> select gender :</lable><br>
+MALE <input type="radio" value="male" id="male" name="Gender"><br>
+FEMALE <input type="radio" value="female" id="female" name="Gender"><br>
+OTHERS <input type="radio" value="other" id="other" name="Gender"><br><br>
+<br>
+<input type=submit value=submit id="submit">
+<input type=reset value=reset id="reset">
+</div>
+</div>
+</div>
+</form>
+</center>
+</body>
+</html>
